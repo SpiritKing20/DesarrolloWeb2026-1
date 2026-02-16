@@ -7,3 +7,15 @@ if (typeof(Storage) !== "undefined") {
 } else {
   x.innerHTML = "Sorry, no Web storage support!";
 }
+
+function saveToLocalStorage() {
+    var name = document.getElementById("name").value;
+    localStorage.setItem("name", name);
+    alert("Name saved to local storage!");
+}
+
+function saveToSessionStorage() {
+    var name = document.getElementById("name").value;
+    sessionStorage.setItem("name", name);
+    alert("Name saved to session storage!");
+}

@@ -12,7 +12,7 @@ function saveToLocalStorage() {
     var name = document.getElementById("nameLocal").value;
     if (name) {
         localStorage.setItem("userName", name);
-        alert("Nombre guardado: " + name);
+        document.getElementById("result").innerHTML = "Nombre guardado es: " + name;
     } else {
         alert("Por favor ingresa un nombre");
     }
@@ -22,7 +22,7 @@ function saveToSessionStorage() {
     var name = document.getElementById("nameSession").value;
     if (name) {
         sessionStorage.setItem("userSession", name);
-        alert("Nombre guardado en sesión: " + name);
+        document.getElementById("result").innerHTML = "Nombre guardado es: " + name;
     } else {
         alert("Por favor ingresa un nombre");
     }
@@ -35,6 +35,7 @@ window.addEventListener("load", function() {
     
     if (savedName) {
         document.getElementById("nameLocal").value = savedName;
+        document.getElementById("result").innerHTML = "Nombre guardado es: " + savedName;
     }
     if (savedSession) {
         document.getElementById("nameSession").value = savedSession;

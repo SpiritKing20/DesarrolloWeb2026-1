@@ -1,3 +1,13 @@
 sbody {
   background-color: rgb(189, 102, 15);
 }
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}

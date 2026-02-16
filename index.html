@@ -3,52 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!--- Favicon-->
-    <link rel="icon" href="./SCR/Img/imgf.ico" type="image/ico">
-    
-    <!---#1 CSS-->
-    <link rel="stylesheet" href="/SCR/Css/main.css">
-    <!---#2 JS-->
-    <script src="/SCR/js/main.js" defer></script>
-        <style>
-        #mytext {
-            color: red;
-
+    <title>web2026-1</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./SCR/Img/imgf.ico">
+    <!-- #1 CSS -->
+    <link rel="stylesheet" href="./SCR/Css/main.css">
+     <!-- #3 CSS -->
+    <style>
+        #myText{
+            color: rgb(14, 35, 189);
         }
 
-        .myclass {
-            color: blue;
+        .myClass{
+            color: rgb(226, 141, 43);
         }
 
-        .mymood {
-            color: green;
-        }  
-
+        .myMood{
+            padding: 5%;
+        }
     </style>
-
 </head>
-
-
 <body>
-    
-    <h1> Elian Paga el Almuerzo </h1>
+    <!-- #2 CSS -->
+    <h1 style="color: rgb(255, 255, 255);">Web Development</h1>
+    <h3 id="myText">Local Storage vs Session storage</h3>
+    <h5 class="myClass myMood">Elian Paga el almuerzo</h5>
+    <div id="result"></div>
 
-    <h2>Local Storage</h2>
+    <hr>
+
+    <h1>Local Storage </h1>
     <span>Nombre(Local Storage):</span>
     <input type="text" name="nameLocal" id="nameLocal">
-    <button> Guardar </button><br><br>
+    <button onclick="saveToLocalStorage()"> Guardar </button><br><br>
     <span>Nombre guardado es: XXX</span>
     <hr>
-    <h2>Session Storage</h2>
+   <h1>Session Storage </h1>
     <span>Nombre(Session Storage):</span>
     <input type="text" name="nameSession" id="nameSession">
-    <button> Guardar </button><br><br>
+    <button onclick="saveToSessionStorage()"> Guardar </button><br><br>
     <span>Nombre guardado es: XXX</span>
-    <h3 id="mytext"> Local Storage vs Session Storage</h3>
 
-    <h5 class="myclass"> Local Storage vs Session Storage</h5>
-
-    <div id="Result"></div>
+    <!-- JS -->
+    <script src="./SCR/js/main.js"></script>
 </body>
 </html>

@@ -2,6 +2,7 @@
 alert("Dilan... La promesa de WEB");
 
 const x = document.getElementById("result");
+
 if (typeof(Storage) !== "undefined") {
   x.innerHTML = "Your browser supports Web storage!";
 } else {
@@ -9,13 +10,11 @@ if (typeof(Storage) !== "undefined") {
 }
 
 function saveToLocalStorage() {
-    var name = document.getElementById("name").value;
-    localStorage.setItem("name", name);
-    alert("Name saved to local storage!");
+    var name = document.getElementById("nameLocal").value;
+    alert(name);
 }
 
 function saveToSessionStorage() {
-    var name = document.getElementById("name").value;
-    sessionStorage.setItem("name", name);
-    alert("Name saved to session storage!");
+    var name = document.getElementById("nameSession").value;
+    alert(name);
 }

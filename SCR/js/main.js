@@ -1,4 +1,6 @@
 
+alert("Dilan... La promesa de WEB");
+
 const x = document.getElementById("result");
 if (typeof(Storage) !== "undefined") {
   x.innerHTML = "Your browser supports Web storage!";
